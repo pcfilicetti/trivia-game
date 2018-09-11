@@ -1,0 +1,91 @@
+html {
+    background-color: #fefefe;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px #eee;
+    text-align: center;
+}
+
+.hero-div {
+    height: 600px;
+    background-image: url("../images/highhowareya.jpg");
+    background-size: 100px 100px;
+    text-align: center;
+    color: white;
+}
+
+.hero-head {
+    font-size: 72px;
+    padding-top: 160px;
+    margin: 0;
+}
+
+#start-trivia {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: none;
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+#start-trivia:hover {
+    background-color: salmon;
+    transition: all 0.2s ease-in-out;
+}
+
+#right-wrong {
+    margin-top: 40px;
+    font-size: 27px;
+}
+
+#timer {
+    text-align: center;
+    position: fixed;
+    background-color: white;
+    margin: 0;
+    padding: 20px 0px;
+    top: 0;
+    left: 0;
+    font-size: 13.8px;
+}
+
+.set {
+    border: 1px goldenrod solid;
+    border-top: none;
+    margin: 0;
+    text-align: left;
+}
+
+.set:first-child {
+    margin-top: 50px;
+    border-top: 1px goldenrod solid;
+}
+
+#submit-trivia {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: none;
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#submit-trivia:hover {
+    background-color: salmon;
+    transition: all 0.2s ease-in-out;
+}

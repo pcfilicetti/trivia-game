@@ -202,7 +202,7 @@ $(document).ready(function () {
                 var question = questionAnswer[q].question;
                 var answer = questionAnswer[q].answer;
                 var guesses = randomizer(questionAnswer[q].answer, questionAnswer[q].guess1, questionAnswer[q].guess2, questionAnswer[q].guess3);
-                var fieldset = $("<fieldset>");
+                var fieldset = $("<fieldset>").attr("class", "set");
                 var ques = $("<p>").text(question);
                 fieldset.append(ques);
                 for (var g in guesses) {
@@ -210,7 +210,7 @@ $(document).ready(function () {
                     var span = $("<span>").text(guesses[g]).attr("class", "questionGuess");
                     if (radio.val() == answer) {
                         radio.attr("class", "rightAns");
-                        span.attr("class", "correct");
+                        span.attr("class", "correct questionGuess");
                     } else {
                         radio.attr("class", "wrongAns");
                     }
